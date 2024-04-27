@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+header{
+    padding: 16px 0;
+    background-color: blue;
+    color: white;
+}
+
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    color: white;
+}
+
+header nav li a{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.container,
+.product {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container,
+section .product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .container,
+section .product{
+    align-items: flex-start;
+}
+
+section{
+    padding: 24px 0;
+}
+
+section h1{
+    margin-bottom: 16px;
+    font-size: 30px;
+    color:blue
+}
+
+section p{
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.store-front {
+    width: 700px;
+    margin-right: 32px;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.adicionar-carrinho {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+
+@media screen and (max-width: 640px) {
+header .container,
+section .container,
+section .product{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.store-front {
+    width: 300px;
+    margin-left: 32px;
+    margin-bottom: 36px;
+}
+
+.produtos{
+    display: block;
+}
+.adicionar-carrinho {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 30px;
+    margin-bottom: 32px;
+}
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+
+header .container,
+section .container,
+section .product{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+    .container{
+        max-width: 90%;
+    }
+
+    .botao-menu{
+        display: none;
+    }
+
+    .destaque .noticia a{
+        font-size: 1.5em;
+    }
+
+    
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    column-gap: 5%;
+    row-gap: 5%;
+}
+.store-front {
+    width: 300px; 
+    height: auto;
+
+
+}
+
+}
